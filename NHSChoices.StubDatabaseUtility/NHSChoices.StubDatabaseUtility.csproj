@@ -60,9 +60,8 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>REM: Begin copy output assembly to Common/Lib
-IF "$(SkipPostBuild)" NEQ "1" CopyToCommonLib "$(TargetDir)$(TargetFileName)" "$(COMMON_LIB_BRANCH)"
-REM: End copy output assembly to Common/Lib</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
